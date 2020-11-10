@@ -1,0 +1,31 @@
+test_closest (__main__.TestExercice) ... ok
+test_coordinates (__main__.TestExercice) ... FAIL
+test_linear_values (__main__.TestExercice) ... ok
+
+======================================================================
+FAIL: test_coordinates (__main__.TestExercice)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test_exercice.py", line 32, in test_coordinates
+    'Mauvaise réponse'
+  File "/home/runner/.local/lib/python3.6/site-packages/numpy/testing/_private/utils.py", line 931, in assert_array_equal
+    verbose=verbose, header='Arrays are not equal')
+  File "/home/runner/.local/lib/python3.6/site-packages/numpy/testing/_private/utils.py", line 840, in assert_array_compare
+    raise AssertionError(msg)
+AssertionError: 
+Arrays are not equal
+Mauvaise réponse
+Mismatched elements: 1 / 6 (16.7%)
+Max absolute difference: 2.49809154
+Max relative difference: 5.3879099
+ x: array([[ 0.      ,  0.      ],
+       [14.142136,  0.785398],
+       [ 2.236068,  2.034444]])
+ y: array([[ 0.      ,  0.      ],
+       [14.142136,  0.785398],
+       [ 2.236068, -0.463648]])
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.002s
+
+FAILED (failures=1)
